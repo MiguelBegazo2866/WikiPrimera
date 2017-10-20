@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Proxmox</title>
+  <link rel="stylesheet" href="CSS/css.css">
+  <link rel="stylesheet" media="screen and (max-width: 1200px) and (min-width: 601px)" href="CSS/css2.css" />
+  <link rel="stylesheet" media="screen and (max-width: 600px) " href="CSS/css3.css" />
+</head>
+<body>
+    <a href="#arriba"><img src="imagenes/fecha.svg" class="flechaarriba"></a>
+    <a href="Index.html"><img src="imagenes/casita.png" class="casita"></a>
+    <div id="header">
+    <p><a name="arriba"></a></p>      
+    <nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
+        <ul class="ulnav">
+          <li><a href="Index.html">Index</a>
+          <li><a href="Proxmox.html">Proxmox</a>
+            <ul>
+              <li class="submenu"><a href="Proxmox.html#que_es">¿Qué es?</a></li>
+              <li class="submenu"><a href="Proxmox.html#para_que_se_usa">¿Para qué se utiliza?</a></li>
+              <li class="submenu"><a href="Proxmox.html#instalacion_y_configuracion">Instalación y configuración</a></li>
+            </li>
+            </ul>
+          <li><a href="Server.html">Server</a>
+            <ul>
+              <li class="submenu"><a href="Server.html#que_es">¿Qué es?</a></li>
+              <li class="submenu"><a href="Server.html#para_que_se_usa">¿Para qué se utiliza?</a></li>
+              <li class="submenu"><a href="Server.html#instalacion_y_configuracion">Instalación y configuración</a></li>
+            </ul>
+            <li><a href="Apache.html">Apache</a>
+            <ul>
+              <li class="submenu"><a href="Apache.html#que_es">¿Qué es?</a></li>
+              <li class="submenu"><a href="Apache.html#para_que_se_usa">¿Para qué se utiliza?</a></li>
+              <li class="submenu"><a href="Apache.html#instalacion_y_configuracion">Instalación y configuración</a>
+                <ul>
+                   <li class="submenu2"><a href="Apache.html#instalacion">Instalación</a></li>
+                    <li class="submenu2"><a href="Apache.html#configuracion">Configuración</a></li>
+                    <li class="submenu2"><a href="Apache.html#comandos">Comandos</a></li>
+                </ul>
+              </li>
+            </ul>
+            <li><a href="Github.html">Git-Hub</a>
+            <ul>
+              <li class="submenu"><a href="Github.html#que_es_git">¿Qué es Git?</a></li>
+              <li class="submenu"><a href="Github.html#para_que_se_usa">¿Qué es el control de versiones?</a></li>
+              <li class="submenu"><a href="Github.html#que_es_git_hub">¿Qué es Git Hub?</a></li>
+              <li class="submenu"><a href="Github.html#instalacion_y_configuracion">Instalación y configuración</a></li>
+              <li class="submenu"><a href="Github.html#repositorios">Creación de un repositorio</a></li>
+              <li class="submenu"><a href="Github.html#que_es_git_hub">Subida de un archivo</a></li>
+              <li class="submenu"><a href="Github.html#mostrarestado">Mostrar estado actual</a></li>
+              <li class="submenu"><a href="Github.html#eliminar">Eliminar un archivo</a></li>
+              <li class="submenu"><a href="Github.html#clonar">Clonar un repositorio</a></li>
+            </ul>
+
+                
+           
+        </ul>
+      </nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
+    </div>
+
+
+    <div id="pagina">
+            <article>
+              <h1>UBUNTU SERVER</h1>
+                <h2><a name="que_es">¿Qué es?</a></h2>
+                  <p>ProMox es un servidor que administra maquinas virtuales a través de una interfaz web, se instala como sistema operativo utilizando la distribución GNU/Linux Debian.</p>
+
+              <h2><a name="para_que_se_usa">¿Para qué se usa?</a></h2>
+                <p>En nuestro caso, nos sirve para montar un servidor web y en el instalar diferentes servicios.</p>
+              <h2><a name="instalacion_y_configuracion">Instalación y configuración</a></h2>
+                <p><b><a name="paso1">Primer paso:</a> </b></p>
+            <p>Ir a nuestro dominio y pinchar en <b>local</b>, al hacerlo os aparecera la siguiente ventana:</p><br>
+              <img src="imagenes/ct/cap1.png" class="imagenestutorial"> <br><br>
+
+          <p><b><a name="paso2">Segundo paso:</a> </b></p>
+          <p>Pinchamos en plantillas y seleccionamos la que queramos escoger que en nuestro caso va a ser la versión <b>Ubuntu 17.04.</b> </p><br>
+          <img src="imagenes/ct/cap2.png" class="imagenestutorial">  <br><br>
+          
+          <p><b><a name="paso3">Tercer paso:</a> </b></p>
+          <p>Una vez esté descargada procedemos a crear un contenedor, para ir a la creación de el hay que hacer click aquí.</p><br>
+          <img src="imagenes/ct/cap3.png" class="imagenestutorial"><br><br>  
+
+        <h3><a name="creacion">Creación e instalación en el contenedor</a></h3>
+          <p><b><a name="paso4">Cuarto Paso:</a></b></p>
+          <p> Una vez esté descargada la plantilla, procederemos a crear nuestro contenedor. Para ello, hay que pinchar en la esquina superior sobre el boton <b>creat CT</b>.</p><br>
+          <img src="imagenes/ct/cap4.png" class="imagenestutorial"><br><br>
+
+          <p><b><a name="paso5">Quinto paso:</a></b></p>
+          <p>Se te abrira una pestañita como esta, rellenar por lo menos la parte de host y la contraseña.</p><br>
+          <img src="imagenes/ct/cap5.png" class="imagenestutorial"><br><br>  
+
+          <p><b><a name="paso6">Sexto paso:</a></b></p>
+          <p>Cuando esté rellenada hacer click en plantilla o siguiente, seleccionamos la plantilla que hayamos descargado.</p><br>
+          <img src="imagenes/ct/cap6.png" class="imagenestutorial"><br><br>
+
+          <p><b><a name="paso7">Septimo paso:</a></b></p>
+          <p>Cuando esté seleccionada la plantilla hacer click en root disc, damos el tamaño de disco y continuamos haciendo click en CPU o siguiente.</p><br>
+          <img src="imagenes/ct/cap7.png" class="imagenestutorial"><br><br>
+
+          <p><b><a name="paso8">Octavo paso:</a></b></p>
+          <p>Elegir cuantos nucleos queremos coger del procesador y hacemos click en Memoria o siguiente.</p><br>
+          <img src="imagenes/ct/cap8.png" class="imagenestutorial"><br>
+
+          <p><b><a name="paso9">Noveno paso:</a></a></b></p>
+          <p>Elegimos cuanta memoria RAM queremos que coja y hacemos click en Redes o siguiente.</p><br>
+          <img src="imagenes/ct/cap9.png" class="imagenestutorial"><br><br>
+
+          <p><b><a name="paso10">Décimo paso:</a></b></p>
+          <p>Aquí rellenamos la parte de IPV4 y puerta de enlace, una vez rellenado hacemos click en DNS o siguiente.</p><br>
+          <img src="imagenes/ct/cap10.png" class="imagenestutorial"><br><br>
+
+          <p><b><a name="paso11">Undécimo paso:</a></b></p>
+          <p>Metemos nuestro DNS y hacemos click en confirmación o siguiente.</p><br>
+          <img src="imagenes/ct/cap11.png" class="imagenestutorial"><br><br>
+
+          <p><b><a name="paso12">Duodécimo paso:</a></b></p>
+          <p>Revisar si todo está correcto y hacer click en finalizado.</p><br>
+          <img src="imagenes/ct/cap12.png" class="imagenestutorial"><br><br>
+
+          <p><b><a name="paso13">Decimotercero paso:</a></b></p>
+          <p>Esperar hasta que deje de procesar todo(tarda poco), cuando acabe cerrar esta ventana.</p><br>
+          <img src="imagenes/ct/cap13.png" class="imagenestutorial"><br><br>
+
+          <p><b><a name="paso14">Decimocuarto paso:</a></b></p>
+          <p>Cuando ya haya acabado hacemos click derecho en nuestro contenedor y le damos a consola.</p><br>
+          <img src="imagenes/ct/cap14.png" class="imagenestutorial"><br><br>
+
+          <p>Una vez se haya abierto la cuenta será root(viene predefinida así) y la contraseña la que hayamos puesto en pasos anteriores.</p>
+            </article>
+        </div>
+<br>
+    <footer>
+            <b>&copy; Página realizada por: Maitane Navarro, Kevin Díaz-Medino, Veronica Cuadrado y Eder Grijalba. </b>
+    </footer>
+
+</body>
+</html>

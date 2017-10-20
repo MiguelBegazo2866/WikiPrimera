@@ -1,0 +1,167 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	background-color:lightgrey;
+
+}
+			
+.flechaarriba {
+	right: 2%;
+	bottom: 13%;
+	position:fixed;
+	height:7%;
+	width: 7%;
+}
+.casita {
+	left: 2%;
+	bottom: 13%;
+	position:fixed;
+	height:7%;
+	width: 7%;
+}		
+
+#header {
+	margin-left:12.5%;
+	margin-right:12.5%;
+	height: 90%;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:white;
+	width: 75%;
+
+}
+
+nav{
+	z-index: 2;
+	position: absolute;
+	width: 75%;
+}
+
+ul {
+	list-style:none;
+}
+			
+.ulnav {
+	width:100%; /*Le establecemos un ancho*/
+	margin:0 auto; /*Centramos automaticamente*/
+}
+ 
+.ulnav > li {
+	float:left;
+	width:20%;
+	text-align:center;
+	font-size: 200%;
+}
+			
+.ulnav li a {
+	background-color:grey;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 12px;
+	display:block;
+}
+			
+.ulnav li a:hover {
+	background-color:grey;
+	border-bottom: 2px solid;
+	
+	z-index: 1;
+}
+			
+.ulnav li ul {
+	display:none;
+	position:right;
+	
+	width:80%;
+}
+			
+.ulnav li:hover > ul {
+	display:block;
+}
+			
+.ulnav li ul li {
+	position:relative;
+}
+			
+.ulnav li ul li ul {
+	width:90%;
+}
+.submenu{
+	font-size:14px;
+}
+.submenu2{
+	font-size:12px;
+	float:right;
+}
+
+#pagina{
+	margin-top:7%;
+	margin-left:12.5%;
+	margin-right: 12.5%;
+
+}
+
+.imageneslink{
+	width:24%;
+	height:100px;
+}
+
+#pagina h1{
+	text-align:center;
+	color:DarkGreen;
+	font-family: Arial;
+	font-size:100px;
+	margin-bottom:-4%;
+	margin-top:-4%;
+}
+#pagina h2{
+	margin-top:4%;
+	margin-bottom:1%;
+}
+#pagina p {
+	margin-left:5%;
+}
+
+#pagina ol {
+	margin-left:8%;
+
+}
+
+#pagina #comandos{
+	margin-left:8%;
+	font-style: italic;
+}
+
+.listaarticle{
+	list-style:square;
+	margin-left:10%;
+}
+
+
+.imagenestutorial{
+	width:60%;
+	border:4px solid black;
+	display:block;
+	margin:auto;
+}
+
+/*pie de pagina */ 
+footer {
+	margin-left:12.5%;
+margin-right:12.5%;
+
+	display: block;
+    padding: 5px;
+	text-align:center;
+    min-height: 50px;
+    border: 2px solid black;
+    border-radius: 7pt;
+    background: SkyBlue ;
+	width:auto;
+	font-family:Arial, Helvetica, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

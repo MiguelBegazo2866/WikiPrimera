@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Git-Hub</title>
+  <link rel="stylesheet" href="CSS/css.css">
+  <link rel="stylesheet" media="screen and (max-width: 1200px) and (min-width: 601px)" href="CSS/css2.css" />
+  <link rel="stylesheet" media="screen and (max-width: 600px) " href="CSS/css3.css" />
+</head>
+<body>
+ <a href="#arriba"><img src="imagenes/fecha.svg" class="flechaarriba"></a>
+ <a href="Index.html"><img src="imagenes/casita.png" class="casita"></a>
+    <div id="header">
+    <p><a name="arriba"></a></p>      
+    <nav> <!-- Aqui estamos iniciando la nueva etiqueta nav -->
+        <ul class="ulnav">
+          <li><a href="Index.html">Index</a>
+          <li><a href="Proxmox.html">Proxmox</a>
+            <ul>
+              <li class="submenu"><a href="Proxmox.html#que_es">¿Qué es?</a></li>
+              <li class="submenu"><a href="Proxmox.html#para_que_se_usa">¿Para qué se utiliza?</a></li>
+              <li class="submenu"><a href="Proxmox.html#instalacion_y_configuracion">Instalación y configuración</a></li>
+            </li>
+            </ul>
+          <li><a href="Server.html">Server</a>
+            <ul>
+              <li class="submenu"><a href="Server.html#que_es">¿Qué es?</a></li>
+              <li class="submenu"><a href="Server.html#para_que_se_usa">¿Para qué se utiliza?</a></li>
+              <li class="submenu"><a href="Server.html#instalacion_y_configuracion">Instalación y configuración</a></li>
+            </ul>
+            <li><a href="Apache.html">Apache</a>
+            <ul>
+              <li class="submenu"><a href="Apache.html#que_es">¿Qué es?</a></li>
+              <li class="submenu"><a href="Apache.html#para_que_se_usa">¿Para qué se utiliza?</a></li>
+              <li class="submenu"><a href="Apache.html#instalacion_y_configuracion">Instalación y configuración</a>
+                <ul>
+                   <li class="submenu2"><a href="Apache.html#instalacion">Instalación</a></li>
+                    <li class="submenu2"><a href="Apache.html#configuracion">Configuración</a></li>
+                    <li class="submenu2"><a href="Apache.html#comandos">Comandos</a></li>
+                </ul>
+              </li>
+            </ul>
+            <li><a href="Github.html">Git-Hub</a>
+            <ul>
+              <li class="submenu"><a href="Github.html#que_es_git">¿Qué es Git?</a></li>
+              <li class="submenu"><a href="Github.html#para_que_se_usa">¿Qué es el control de versiones?</a></li>
+              <li class="submenu"><a href="Github.html#que_es_git_hub">¿Qué es Git Hub?</a></li>
+              <li class="submenu"><a href="Github.html#instalacion_y_configuracion">Instalación y configuración</a></li>
+              <li class="submenu"><a href="Github.html#repositorios">Creación de un repositorio</a></li>
+              <li class="submenu"><a href="Github.html#que_es_git_hub">Subida de un archivo</a></li>
+              <li class="submenu"><a href="Github.html#mostrarestado">Mostrar estado actual</a></li>
+              <li class="submenu"><a href="Github.html#eliminar">Eliminar un archivo</a></li>
+              <li class="submenu"><a href="Github.html#clonar">Clonar un repositorio</a></li>
+            </ul>
+
+                
+           
+        </ul>
+      </nav><!-- Aqui estamos cerrando la nueva etiqueta nav -->
+    </div>
+
+
+    <div id="pagina">
+            <article>
+              <h1>Git-Hub</h1>
+                <h2><a name="quees_git">¿Qué es Git?</a></h2>
+                  <p>Git es un sistema de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia y la confiabilidad del mantenimiento de versiones de aplicaciones cuando éstas tienen un gran número de archivos de código fuente.</p><br>
+
+              <h2><a name="control_versiones">¿Qué es el control de versiones?</a></h2>
+                <p>El control de versiones es la gestión de los diversos cambios que se realizan sobre algún archivo, en este caso, código.</p><br>
+
+              <h2><a name="que_es_github">¿Qué es GitHub?</a></h2>
+              <p>Es un sistema de control de versiones basado en Git, tiene una comunidad muy activa y aloja algunos proyectos muy interesantes como el Bootstrap de Twitter, el HTML5 Boilerplate, jQuery, entre muchos otros.</p><br>
+
+
+              <h2><a name="instalacionyconfiguracion">Instalación y configuración</a></h2>
+                <h3><a name="instalacion">Instalación</a></h3><br>
+                <p>Lo primero que tenemos que hacer es instalar Git, para eso abrimos la consola y tecleamos:</p>
+                <p id="comandos">sudo apt-get install git-hub</p><br>
+                <br><br>
+                
+                <h3 ><a name="configuracion">Configuración</a></h3><br>
+                  <p>Después configuraremos nuestros datos (usaré los míos):</p>
+                  <p id="comandos">git config --global user.name "carlos"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;git config --global user.email "me@carlosandresviteri.com"</p><br>
+
+                   <img src="imagenes/git/git1.png" class="imagenestutorial">
+                  <br><br>
+
+                  <h3><a name="repositorios">Creación de un repositorio</a></h3><br>
+                  <p>Para crear un repositorio deberemos dirigirnos a New Repository , completar los datos que nos pide y darle clic a <b>Create Repository</b></p>
+                  <br><br>
+                  
+
+                  <h3><a name="repositorios">Creación de un repositorio</a></h3><br>
+                  <p>Para subir archivos desde nuestro ordenador primero iniciamos el git. Ejecutamos el siguiente comando:</p>
+                    <p id="comandos">git init</p><br>
+                  <p>Para añadir archivos, si queremos por ejemplo añadir todos los archivos de la carpeta, tecleamos el siguiente comando:</p>
+                    <p id="comandos">git add .</p><br>
+                  <p>Pero si queremos añadir un archivo específico sería:</p>
+                    <p id="comandos">git add nombre-del-archivo.extensión</p><br>
+                  <p>Para subir archivos desde nuestro ordenador primero iniciamos el git. Ejecutamos el siguiente comando:</p>
+                    <p id="comandos">git commit -m '1consolidacion'</p><br>
+                  <p>Para eliminar los cambios realizados que aún no se hayan hecho commit tecleamos:</p>
+                    <p id="comandos">git reset --hard HEAD</p><br>
+                  <p>Para conectarnos al repositorio tecleamos -nótese mi nombre de usuario y el nombre del repositorio:</p>
+                    <p id="comandos">git remote add origin git@github.com: niclick/intro-github-en-ubuntu.git</p><br>
+                  <p><b>Si nos sale este error:</b></p>
+                    <p id="comandos">fatal: remote origin already exists</p><br>
+                  <p><b>La solución es teclear, y repetir el paso anterior:</b></p>
+                    <p id="comandos">git remote rm origin</p><br>
+                  <p><b>Y lo subimos:</b></p>
+                    <p id="comandos">git push -u origin master</p><br>
+                  <p><b>Para registrar las consolidaciones tecleamos:</b></p>
+                    <p id="comandos">git log</p><br><br>
+
+
+                <h3><a name="mostrarestado">Mostrar estado actual</a></h3><br>
+                  <p>Para mostrar el estado actual de la rama, como los cambios que hay sin commitear tecleamos:</p>
+                    <p id="comandos">git status</p><br><br>
+
+                <h3><a name="actualizar">Actualizar repositorios</a></h3><br>
+                  <p>Para actualizar los repositorios al commit más nuevo tecleamos:</p>
+                    <p id="comandos">git pull</p><br><br>
+
+                <h3><a name="eliminar">Eliminar un archivo</a></h3><br>
+                  <p>Para eliminar un archivo debemos teclear:</p>
+                    <p id="comandos">git rm nombre-del-archivo.extensión</p><br>
+                  <p>Y para que el cambio se refleje en GitHub, deberemos hacer el mismo proceso que el de subida. </p><br><br>
+                
+                <h3><a name="clonar">Clonar un Repositorio</a></h3><br>
+                  <p>Para clonar el repositorio podemos hacerlo mediante la consola. Le damos clic en Git Read-Only y copiamos el contenido:</p>
+                    <img src="imagenes/git/git2.png" class="imagenestutorial"><br>
+                  <p>Luego vamos a la consola y tecleamos git clone más lo que copiamos anteriormente:</p>
+                    <p id="comandos">git clone git://github.com/niclick/intro-github-en-ubuntu.git</p><br>
+                  <p>Y TENDREMOS LISTO NUESTRO REPOSITORIO CLONADO DE FORMA LOCAL.</p>
+
+            </article>
+        </div>
+<br>
+    <footer>
+            <b>&copy; Página realizada por: Maitane Navarro, Kevin Díaz-Medino, Veronica Cuadrado y Eder Grijalba. </b>
+    </footer>
+
+</body>
+</html>

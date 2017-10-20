@@ -1,0 +1,170 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	background-color:lightgrey;
+
+}
+			
+.flechaarriba {
+	right: 1%;
+	bottom: 6.5%;
+	position:fixed;
+	height:3%;
+	width: 3%;
+}
+.casita {
+	left: 1%;
+	bottom: 6.5%;
+	position:fixed;
+	height:3%;
+	width: 3%;
+}		
+
+#header {
+	margin-left:6.25%;
+	margin-right:6.25%;
+	height: 90%;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color:white;
+	width: 75%;
+
+}
+
+nav{
+	z-index: 2;
+	position: absolute;
+	width: 87%;
+}
+
+ul {
+	list-style:none;
+}
+			
+.ulnav {
+	width:100%; /*Le establecemos un ancho*/
+	margin:0 auto; /*Centramos automaticamente*/
+}
+ 
+.ulnav > li {
+	float:left;
+	width:20%;
+	text-align:center;
+	font-size: 100%;
+}
+			
+.ulnav li a {
+	background-color:grey;
+	color:#fff;
+	text-decoration:none;
+	padding:2.5px 3px;
+	display:block;
+}
+			
+.ulnav li a:hover {
+	background-color:grey;
+	border-bottom: 0.5px solid;
+	z-index: 1;
+}
+			
+.ulnav li ul {
+	display:none;
+	position:right;
+	visibility: hidden;
+	width:90%;
+}
+			
+.ulnav li:hover > ul {
+	display:block;
+}
+			
+.ulnav li ul li {
+	position:relative;
+}
+			
+.ulnav li ul li ul {
+	width:90%;
+}
+.submenu{
+	font-size:7px;
+}
+.submenu2{
+	font-size:6px;
+	float:right;
+}
+
+#pagina{
+	margin-top:3.5%;
+	margin-left:6.25%;
+	margin-right: 6.25%;
+
+}
+
+.imageneslink{
+	margin-top: 4%;
+	width:23%;
+	height:50px;
+}
+
+#pagina h1{
+	text-align:center;
+	color:DarkGreen;
+	font-family: Arial;
+	font-size:25px;
+	margin-bottom:-2%;
+	margin-top:9%;
+}
+#pagina h2{
+	margin-top:2%;
+	margin-bottom:0.5%;
+	font-size:20px;
+}
+#pagina p {
+	margin-left:2.5%;
+	font-size:13px;
+	text-align:justify;
+}
+
+#pagina ol {
+	margin-left:4%;
+
+}
+
+#pagina #comandos{
+	margin-left:4%;
+	font-style: italic;
+}
+
+.listaarticle{
+	list-style:square;
+	margin-left:5%;
+}
+
+
+.imagenestutorial{
+	width:60%;
+	border:2px solid black;
+	display:block;
+	margin:auto;
+}
+
+/*pie de pagina */ 
+footer {
+	margin-left:6.25%;
+margin-right:6.25%;
+
+	display: block;
+    padding: 2.5px;
+	text-align:center;
+    min-height: 25px;
+    border: 1px solid black;
+    border-radius: 3.5pt;
+    background: SkyBlue ;
+	width:auto;
+	font-family:Arial, Helvetica, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
